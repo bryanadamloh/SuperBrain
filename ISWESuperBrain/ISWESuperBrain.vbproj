@@ -72,10 +72,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssignClassroom.Designer.vb">
-      <DependentUpon>AssignClassroom.vb</DependentUpon>
+    <Compile Include="AssignStudent.Designer.vb">
+      <DependentUpon>AssignStudent.vb</DependentUpon>
     </Compile>
-    <Compile Include="AssignClassroom.vb">
+    <Compile Include="AssignStudent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssignTeacher.Designer.vb">
+      <DependentUpon>AssignTeacher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignTeacher.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainMenu.Designer.vb">
@@ -112,6 +118,18 @@
     <Compile Include="StudentInfo.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="SubjectInfo.Designer.vb">
+      <DependentUpon>SubjectInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubjectInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TeacherInfo.Designer.vb">
+      <DependentUpon>TeacherInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TeacherInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MainMenu.resx">
@@ -128,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentInfo.resx">
       <DependentUpon>StudentInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubjectInfo.resx">
+      <DependentUpon>SubjectInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeacherInfo.resx">
+      <DependentUpon>TeacherInfo.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

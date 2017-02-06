@@ -4,8 +4,20 @@
             Case "Add/Modify/Delete Student"
                 StudentInfo.Show()
             Case "Assignning Classroom"
-                AssignClassroom.Show()
+                AssignStudent.Show()
         End Select
     End Sub
 
+    Private Sub ComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox2.SelectedIndexChanged
+        Select Case ComboBox2.Text
+            Case "Add/Modify/Delete Teacher"
+                TeacherInfo.Show()
+            Case "Assignning Teacher To Classroom"
+                AssignTeacher.Show()
+        End Select
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        SubjectInfo.Show()
+    End Sub
 End Class

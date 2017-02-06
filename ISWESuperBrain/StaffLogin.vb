@@ -2,6 +2,7 @@
 Imports System.Data.OleDb
 
 Public Class StaffLogin
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|ISWE.mdb"
         Dim SqlString As String = "Select Count(*) From Staff Where StaffName = ? AND StaffPassword = ?"
@@ -22,7 +23,4 @@ Public Class StaffLogin
         End If
     End Sub
 
-    Private Sub TextBox2_TextChanged(sender As Object, e As EventArgs) Handles TextBox2.TextChanged
-
-    End Sub
 End Class
