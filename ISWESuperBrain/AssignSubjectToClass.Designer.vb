@@ -31,8 +31,11 @@ Partial Class AssignSubjectToClass
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.btnSearchClassID = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -57,7 +60,7 @@ Partial Class AssignSubjectToClass
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(23, 134)
+        Me.Label3.Location = New System.Drawing.Point(23, 169)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(89, 13)
         Me.Label3.TabIndex = 7
@@ -66,7 +69,7 @@ Partial Class AssignSubjectToClass
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(63, 169)
+        Me.Label4.Location = New System.Drawing.Point(66, 207)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 8
@@ -95,49 +98,77 @@ Partial Class AssignSubjectToClass
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(174, 226)
+        Me.Button3.Location = New System.Drawing.Point(92, 257)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 33
-        Me.Button3.Text = "Update"
+        Me.Button3.Text = "Add"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(93, 226)
+        Me.Button2.Location = New System.Drawing.Point(11, 257)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 32
         Me.Button2.Text = "Search"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(12, 226)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 31
-        Me.Button1.Text = "Add"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(255, 226)
+        Me.Button5.Location = New System.Drawing.Point(254, 257)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 34
         Me.Button5.Text = "Clear"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(173, 257)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(75, 23)
+        Me.Button6.TabIndex = 35
+        Me.Button6.Text = "Delete"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(40, 134)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(72, 13)
+        Me.Label5.TabIndex = 36
+        Me.Label5.Text = "Classroom ID:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(118, 204)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(161, 20)
+        Me.TextBox4.TabIndex = 37
+        '
+        'btnSearchClassID
+        '
+        Me.btnSearchClassID.Location = New System.Drawing.Point(285, 93)
+        Me.btnSearchClassID.Name = "btnSearchClassID"
+        Me.btnSearchClassID.Size = New System.Drawing.Size(26, 23)
+        Me.btnSearchClassID.TabIndex = 40
+        Me.btnSearchClassID.Text = "⌕"
+        Me.btnSearchClassID.UseVisualStyleBackColor = True
+        '
         'AssignSubjectToClass
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(341, 297)
+        Me.ClientSize = New System.Drawing.Size(341, 309)
+        Me.Controls.Add(Me.btnSearchClassID)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -161,6 +192,9 @@ Partial Class AssignSubjectToClass
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents Button1 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Label5 As Label
+    Friend WithEvents TextBox4 As TextBox
+    Friend WithEvents btnSearchClassID As Button
 End Class

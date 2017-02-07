@@ -159,6 +159,9 @@
     <EmbeddedResource Include="AssignSubjectToClass.resx">
       <DependentUpon>AssignSubjectToClass.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AssignTeacher.resx">
+      <DependentUpon>AssignTeacher.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassroomInfo.resx">
       <DependentUpon>ClassroomInfo.vb</DependentUpon>
     </EmbeddedResource>
