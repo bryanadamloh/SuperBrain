@@ -78,6 +78,12 @@
     <Compile Include="AssignStudent.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="AssignSubjectToClass.Designer.vb">
+      <DependentUpon>AssignSubjectToClass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AssignSubjectToClass.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="AssignTeacher.Designer.vb">
       <DependentUpon>AssignTeacher.vb</DependentUpon>
     </Compile>
@@ -150,6 +156,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AssignSubjectToClass.resx">
+      <DependentUpon>AssignSubjectToClass.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClassroomInfo.resx">
       <DependentUpon>ClassroomInfo.vb</DependentUpon>
     </EmbeddedResource>

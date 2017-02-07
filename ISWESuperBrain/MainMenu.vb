@@ -17,8 +17,13 @@
         End Select
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        SubjectInfo.Show()
+    Private Sub ComboBox3_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox3.SelectedIndexChanged
+        Select Case ComboBox3.Text
+            Case "Add/Modify/Delete Subject"
+                SubjectInfo.Show()
+            Case "Assignning Subject To Classroom"
+                AssignSubjectToClass.Show()
+        End Select
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -28,4 +33,5 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         ClassroomInfo.Show()
     End Sub
+
 End Class
