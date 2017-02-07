@@ -96,6 +96,12 @@
     <Compile Include="MainMenu.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Payment.Designer.vb">
+      <DependentUpon>Payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="StaffInfo.Designer.vb">
       <DependentUpon>StaffInfo.vb</DependentUpon>
     </Compile>
