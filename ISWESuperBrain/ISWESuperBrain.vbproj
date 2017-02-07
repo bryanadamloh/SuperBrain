@@ -84,10 +84,22 @@
     <Compile Include="AssignTeacher.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="ClassroomInfo.Designer.vb">
+      <DependentUpon>ClassroomInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassroomInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffInfo.Designer.vb">
+      <DependentUpon>StaffInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="StaffInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StaffLogin.vb">
@@ -132,8 +144,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ClassroomInfo.resx">
+      <DependentUpon>ClassroomInfo.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffInfo.resx">
+      <DependentUpon>StaffInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffLogin.resx">
       <DependentUpon>StaffLogin.vb</DependentUpon>
