@@ -14,8 +14,9 @@ Public Class Payment
                 Using reader As OleDbDataReader = cmd.ExecuteReader()
                     If reader.HasRows Then
                         While reader.Read()
-                            Dim SqlString1 As String = "Select * From Student Where StudentName = ?"
+                            Dim SqlString1 As String = "Select * From Student Where StudentName = ? AND NoOfSubjects = ?"
                             TextBox3.Text = reader("StudentName").ToString()
+                            TextBox4.Text = reader("NoOfSubjects").ToString()
                         End While
                     Else
                         MsgBox("Student ID does not exists!")
@@ -66,12 +67,34 @@ Public Class Payment
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|ISWE.mdb"
-        Dim SqlString As String = "Update Payment Set StudentID = @StudentID, StudentName = @StudentName, TotalFee = @TotalFee, PaymentDate = @PaymentDate Where (PaymentID = @PaymentID)"
+        Dim SqlString As String = "Insert Into Payment (StudentID, StudentName, TotalFee, PaymentDate) Values (@StudentID, @StudentName, @TotalFee, @PaymentDate)"
         Using conn As New OleDbConnection(connect)
             conn.Open()
             Using cmd As New OleDbCommand(SqlString, conn)
                 cmd.CommandType = CommandType.Text
+                cmd.Parameters.AddWithValue("@StudentID", TextBox2.Text)
+                cmd.Parameters.AddWithValue("@StudentName", TextBox3.Text)
+                cmd.Parameters.AddWithValue("@TotalFee", TextBox5.Text)
+                cmd.Parameters.AddWithValue("@PaymentDate", TextBox6.Text)
+                cmd.ExecuteNonQuery()
+                MsgBox("Payment Details have been updated!")
             End Using
+            conn.Close()
+            TextBox1.Clear()
+            TextBox2.Clear()
+            TextBox3.Clear()
+            TextBox4.Clear()
+            TextBox5.Clear()
+            TextBox6.Clear()
         End Using
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
+        TextBox6.Clear()
     End Sub
 End Class
