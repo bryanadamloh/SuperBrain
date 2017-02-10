@@ -28,6 +28,7 @@ Partial Class MainMenu
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label3
@@ -62,7 +63,7 @@ Partial Class MainMenu
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(185, 220)
+        Me.Button2.Location = New System.Drawing.Point(152, 220)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 10
@@ -71,7 +72,7 @@ Partial Class MainMenu
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(111, 220)
+        Me.Button3.Location = New System.Drawing.Point(78, 220)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 11
@@ -88,11 +89,21 @@ Partial Class MainMenu
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Text = "Subject"
         '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(226, 220)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 13
+        Me.Button1.Text = "Payment"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'MainMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(368, 261)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ComboBox3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -112,4 +123,5 @@ Partial Class MainMenu
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Button1 As Button
 End Class

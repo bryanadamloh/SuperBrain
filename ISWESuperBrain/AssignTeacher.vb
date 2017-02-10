@@ -46,6 +46,15 @@ Public Class AssignTeacher
             TextBox2.Clear()
             TextBox3.Clear()
             TextBox4.Clear()
+            TextBox5.Clear()
         End Using
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
+        TextBox3.Clear()
+        TextBox4.Clear()
+        TextBox5.Clear()
     End Sub
 End Class

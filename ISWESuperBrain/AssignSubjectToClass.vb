@@ -34,7 +34,7 @@ Public Class AssignSubjectToClass
         TextBox4.Clear()
     End Sub
 
-    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+    Private Sub Button6_Click(sender As Object, e As EventArgs)
         Dim connect As String = "Provider=Microsoft.JET.OLEDB.4.0;" & "Data Source=|DataDirectory|ISWE.mdb"
         Dim SqlString As String = "Select * From Class Where ClassID = ?"
         Using conn As New OleDbConnection(connect)

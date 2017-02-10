@@ -156,6 +156,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AssignStudent.resx">
+      <DependentUpon>AssignStudent.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AssignSubjectToClass.resx">
       <DependentUpon>AssignSubjectToClass.vb</DependentUpon>
     </EmbeddedResource>
@@ -167,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment.resx">
+      <DependentUpon>Payment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffInfo.resx">
       <DependentUpon>StaffInfo.vb</DependentUpon>

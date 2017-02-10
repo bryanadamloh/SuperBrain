@@ -32,7 +32,6 @@ Partial Class AssignSubjectToClass
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.btnSearchClassID = New System.Windows.Forms.Button()
@@ -98,7 +97,7 @@ Partial Class AssignSubjectToClass
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(92, 257)
+        Me.Button3.Location = New System.Drawing.Point(131, 257)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 33
@@ -107,7 +106,7 @@ Partial Class AssignSubjectToClass
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(11, 257)
+        Me.Button2.Location = New System.Drawing.Point(50, 257)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(75, 23)
         Me.Button2.TabIndex = 32
@@ -116,21 +115,12 @@ Partial Class AssignSubjectToClass
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(254, 257)
+        Me.Button5.Location = New System.Drawing.Point(212, 257)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(75, 23)
         Me.Button5.TabIndex = 34
         Me.Button5.Text = "Clear"
         Me.Button5.UseVisualStyleBackColor = True
-        '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(173, 257)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 35
-        Me.Button6.Text = "Delete"
-        Me.Button6.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -165,7 +155,6 @@ Partial Class AssignSubjectToClass
         Me.Controls.Add(Me.btnSearchClassID)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
@@ -193,7 +182,6 @@ Partial Class AssignSubjectToClass
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button5 As Button
-    Friend WithEvents Button6 As Button
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents btnSearchClassID As Button

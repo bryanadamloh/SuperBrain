@@ -35,7 +35,6 @@ Partial Class AssignTeacher
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -152,15 +151,6 @@ Partial Class AssignTeacher
         Me.TextBox4.Size = New System.Drawing.Size(203, 20)
         Me.TextBox4.TabIndex = 55
         '
-        'Button6
-        '
-        Me.Button6.Location = New System.Drawing.Point(159, 321)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(75, 23)
-        Me.Button6.TabIndex = 58
-        Me.Button6.Text = "Delete"
-        Me.Button6.UseVisualStyleBackColor = True
-        '
         'Button5
         '
         Me.Button5.Location = New System.Drawing.Point(240, 321)
@@ -193,7 +183,6 @@ Partial Class AssignTeacher
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(391, 371)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.TextBox4)
@@ -229,7 +218,6 @@ Partial Class AssignTeacher
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents Label7 As Label
     Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents TextBox5 As TextBox
