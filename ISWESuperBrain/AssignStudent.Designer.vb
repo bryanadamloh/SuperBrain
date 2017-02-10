@@ -101,6 +101,7 @@ Partial Class AssignStudent
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(56, 205)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(46, 13)
         Me.Label4.TabIndex = 43
@@ -108,6 +109,7 @@ Partial Class AssignStudent
         '
         'TextBox4
         '
+        Me.TextBox4.Location = New System.Drawing.Point(108, 202)
         Me.TextBox4.Name = "TextBox4"
         Me.TextBox4.Size = New System.Drawing.Size(208, 20)
         Me.TextBox4.TabIndex = 44
