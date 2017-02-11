@@ -100,4 +100,5 @@ Public Class StaffInfo
         TextBox2.Clear()
         TextBox3.Clear()
     End Sub
+
 End Class

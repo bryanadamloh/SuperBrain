@@ -60,7 +60,7 @@ Public Class TeacherInfo
                 cmd.ExecuteNonQuery()
                 MsgBox("Teacher's Information has been updated!")
             End Using
-            conn.Open()
+            conn.Close()
             TextBox1.Clear()
             TextBox2.Clear()
             TextBox3.Clear()

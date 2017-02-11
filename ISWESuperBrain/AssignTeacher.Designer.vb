@@ -128,7 +128,7 @@ Partial Class AssignTeacher
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"10:00", "11:00", "12:00", "1:00", "2:00", "3:00", "4:00", "5:00", "6:00"})
+        Me.ComboBox1.Items.AddRange(New Object() {"10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00"})
         Me.ComboBox1.Location = New System.Drawing.Point(110, 268)
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(203, 21)

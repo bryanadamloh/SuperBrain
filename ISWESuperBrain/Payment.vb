@@ -44,7 +44,7 @@ Public Class Payment
                             TextBox2.Text = reader("StudentID").ToString()
                             TextBox3.Text = reader("StudentName").ToString()
                             TextBox5.Text = reader("TotalFee").ToString()
-                            TextBox6.Text = reader("PaymentDate").ToString()
+                            TextBox6.Text = reader("PaymentDate").ToShortDateString()
                         End While
                     Else
                         MsgBox("Payment ID does not exists!")
