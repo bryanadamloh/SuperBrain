@@ -47,10 +47,13 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -95,6 +98,17 @@
     </Compile>
     <Compile Include="ClassroomInfo.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassReport.Designer.vb">
+      <DependentUpon>ClassReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ClassReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ISWEDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ISWEDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.Designer.vb">
       <DependentUpon>MainMenu.vb</DependentUpon>
@@ -168,6 +182,9 @@
     <EmbeddedResource Include="ClassroomInfo.resx">
       <DependentUpon>ClassroomInfo.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClassReport.resx">
+      <DependentUpon>ClassReport.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.vb</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +214,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ISWEDataSet.xsc">
+      <DependentUpon>ISWEDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ISWEDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ISWEDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ISWEDataSet.xss">
+      <DependentUpon>ISWEDataSet.xsd</DependentUpon>
+    </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
