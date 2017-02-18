@@ -23,16 +23,17 @@ Partial Class ClassReport
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.ClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ISWEDataSet = New ISWESuperBrain.ISWEDataSet()
+        Me.ClassTableAdapter = New ISWESuperBrain.ISWEDataSetTableAdapters.ClassTableAdapter()
         Me.ClassroomNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TeacherNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SubjectDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StudentNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PeriodDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PeriodTimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ISWEDataSet = New ISWESuperBrain.ISWEDataSet()
-        Me.ClassTableAdapter = New ISWESuperBrain.ISWEDataSetTableAdapters.ClassTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ISWEDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -40,6 +41,7 @@ Partial Class ClassReport
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToOrderColumns = True
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.ClassroomNameDataGridViewTextBoxColumn, Me.TeacherNameDataGridViewTextBoxColumn, Me.SubjectDataGridViewTextBoxColumn, Me.StudentNameDataGridViewTextBoxColumn, Me.PeriodDateDataGridViewTextBoxColumn, Me.PeriodTimeDataGridViewTextBoxColumn})
@@ -49,6 +51,20 @@ Partial Class ClassReport
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1183, 261)
         Me.DataGridView1.TabIndex = 0
+        '
+        'ClassBindingSource
+        '
+        Me.ClassBindingSource.DataMember = "Class"
+        Me.ClassBindingSource.DataSource = Me.ISWEDataSet
+        '
+        'ISWEDataSet
+        '
+        Me.ISWEDataSet.DataSetName = "ISWEDataSet"
+        Me.ISWEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ClassTableAdapter
+        '
+        Me.ClassTableAdapter.ClearBeforeFill = True
         '
         'ClassroomNameDataGridViewTextBoxColumn
         '
@@ -85,23 +101,12 @@ Partial Class ClassReport
         'PeriodTimeDataGridViewTextBoxColumn
         '
         Me.PeriodTimeDataGridViewTextBoxColumn.DataPropertyName = "PeriodTime"
+        DataGridViewCellStyle1.Format = "t"
+        DataGridViewCellStyle1.NullValue = Nothing
+        Me.PeriodTimeDataGridViewTextBoxColumn.DefaultCellStyle = DataGridViewCellStyle1
         Me.PeriodTimeDataGridViewTextBoxColumn.HeaderText = "PeriodTime"
         Me.PeriodTimeDataGridViewTextBoxColumn.Name = "PeriodTimeDataGridViewTextBoxColumn"
         Me.PeriodTimeDataGridViewTextBoxColumn.Width = 140
-        '
-        'ClassBindingSource
-        '
-        Me.ClassBindingSource.DataMember = "Class"
-        Me.ClassBindingSource.DataSource = Me.ISWEDataSet
-        '
-        'ISWEDataSet
-        '
-        Me.ISWEDataSet.DataSetName = "ISWEDataSet"
-        Me.ISWEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ClassTableAdapter
-        '
-        Me.ClassTableAdapter.ClearBeforeFill = True
         '
         'ClassReport
         '

@@ -3,7 +3,7 @@
         Select Case ComboBox1.Text
             Case "Add/Modify/Delete Student"
                 StudentInfo.Show()
-            Case "Assignning Classroom"
+            Case "Assigning Classroom"
                 AssignStudent.Show()
         End Select
     End Sub
@@ -12,7 +12,7 @@
         Select Case ComboBox2.Text
             Case "Add/Modify/Delete Teacher"
                 TeacherInfo.Show()
-            Case "Assignning Teacher To Classroom"
+            Case "Assigning Teacher To Classroom"
                 AssignTeacher.Show()
         End Select
     End Sub
@@ -21,7 +21,7 @@
         Select Case ComboBox3.Text
             Case "Add/Modify/Delete Subject"
                 SubjectInfo.Show()
-            Case "Assignning Subject To Classroom"
+            Case "Assigning Subject To Classroom"
                 AssignSubjectToClass.Show()
         End Select
     End Sub
