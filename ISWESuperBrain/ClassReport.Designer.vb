@@ -24,18 +24,18 @@ Partial Class ClassReport
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.ISWEDataSet = New ISWESuperBrain.ISWEDataSet()
-        Me.ClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.ClassTableAdapter = New ISWESuperBrain.ISWEDataSetTableAdapters.ClassTableAdapter()
         Me.ClassroomNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TeacherNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.SubjectDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.StudentNameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PeriodDateDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.PeriodTimeDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.ClassBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ISWEDataSet = New ISWESuperBrain.ISWEDataSet()
+        Me.ClassTableAdapter = New ISWESuperBrain.ISWEDataSetTableAdapters.ClassTableAdapter()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.ISWEDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ClassBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ISWEDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -49,20 +49,6 @@ Partial Class ClassReport
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(1183, 261)
         Me.DataGridView1.TabIndex = 0
-        '
-        'ISWEDataSet
-        '
-        Me.ISWEDataSet.DataSetName = "ISWEDataSet"
-        Me.ISWEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'ClassBindingSource
-        '
-        Me.ClassBindingSource.DataMember = "Class"
-        Me.ClassBindingSource.DataSource = Me.ISWEDataSet
-        '
-        'ClassTableAdapter
-        '
-        Me.ClassTableAdapter.ClearBeforeFill = True
         '
         'ClassroomNameDataGridViewTextBoxColumn
         '
@@ -103,17 +89,31 @@ Partial Class ClassReport
         Me.PeriodTimeDataGridViewTextBoxColumn.Name = "PeriodTimeDataGridViewTextBoxColumn"
         Me.PeriodTimeDataGridViewTextBoxColumn.Width = 140
         '
-        'Form1
+        'ClassBindingSource
+        '
+        Me.ClassBindingSource.DataMember = "Class"
+        Me.ClassBindingSource.DataSource = Me.ISWEDataSet
+        '
+        'ISWEDataSet
+        '
+        Me.ISWEDataSet.DataSetName = "ISWEDataSet"
+        Me.ISWEDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'ClassTableAdapter
+        '
+        Me.ClassTableAdapter.ClearBeforeFill = True
+        '
+        'ClassReport
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1183, 261)
         Me.Controls.Add(Me.DataGridView1)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "ClassReport"
+        Me.Text = "Schedule Report"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.ISWEDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ClassBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ISWEDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub

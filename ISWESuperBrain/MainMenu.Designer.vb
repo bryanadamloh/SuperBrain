@@ -36,7 +36,7 @@ Partial Class MainMenu
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(85, 28)
+        Me.Label3.Location = New System.Drawing.Point(91, 29)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(191, 20)
         Me.Label3.TabIndex = 6
@@ -45,20 +45,20 @@ Partial Class MainMenu
         'ComboBox1
         '
         Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Add/Modify/Delete Student", "Assignning Classroom"})
-        Me.ComboBox1.Location = New System.Drawing.Point(111, 76)
+        Me.ComboBox1.Items.AddRange(New Object() {"Add/Modify/Delete Student", "Assigning Classroom"})
+        Me.ComboBox1.Location = New System.Drawing.Point(105, 76)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(149, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(165, 21)
         Me.ComboBox1.TabIndex = 7
         Me.ComboBox1.Text = "Student"
         '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Add/Modify/Delete Teacher", "Assignning Teacher To Classroom"})
-        Me.ComboBox2.Location = New System.Drawing.Point(111, 122)
+        Me.ComboBox2.Items.AddRange(New Object() {"Add/Modify/Delete Teacher", "Assigning Teacher To Classroom"})
+        Me.ComboBox2.Location = New System.Drawing.Point(105, 122)
         Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(149, 21)
+        Me.ComboBox2.Size = New System.Drawing.Size(165, 21)
         Me.ComboBox2.TabIndex = 8
         Me.ComboBox2.Text = "Teacher"
         '
@@ -83,10 +83,10 @@ Partial Class MainMenu
         'ComboBox3
         '
         Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Add/Modify/Delete Subject", "Assignning Subject To Classroom"})
-        Me.ComboBox3.Location = New System.Drawing.Point(111, 169)
+        Me.ComboBox3.Items.AddRange(New Object() {"Add/Modify/Delete Subject", "Assigning Subject To Classroom"})
+        Me.ComboBox3.Location = New System.Drawing.Point(105, 169)
         Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(149, 21)
+        Me.ComboBox3.Size = New System.Drawing.Size(165, 21)
         Me.ComboBox3.TabIndex = 12
         Me.ComboBox3.Text = "Subject"
         '
